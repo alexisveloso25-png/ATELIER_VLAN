@@ -237,4 +237,9 @@ Extention | 2 |
 Si vous savez expliquer :
 > "Pourquoi deux VLAN ne communiquent pas sans routeur ?"
 
+En résumé
+- Le Switch isole pour des raisons de sécurité et de performance (éviter que tout le monde parle en même temps).
+
+- Le Routeur sert de pont : c'est le seul qui a le droit de prendre un paquet d'un VLAN pour le "re-taguer" et le donner à l'autre VLAN.
+
 Alors vous avez compris la segmentation réseau 👍
