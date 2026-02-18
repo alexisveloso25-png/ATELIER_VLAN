@@ -196,7 +196,7 @@ Changer VLAN 10 en :
 ```
 192.168.10.0/25
 ```
-Capture 
+Capture de changement du masque vlan 10
 
 * * <img width="522" height="147" alt="image" src="https://github.com/user-attachments/assets/fa1d906b-59d6-4078-888d-3f9978bb4754" /> * *
  
@@ -214,7 +214,7 @@ Questions :
 - Ajouter VLAN 30  
 - Mettre un DHCP par VLAN
 
-  Vérification :
+  Vérification : Le PC a bien reçu l'adresse IP du DHCP Vlan 30
 
  * * <img width="1461" height="825" alt="image" src="https://github.com/user-attachments/assets/a6f93a1a-d4a9-4fd9-bb9d-d76fc7273d1d" /> * *
 
