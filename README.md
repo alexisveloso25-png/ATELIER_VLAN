@@ -212,7 +212,12 @@ Questions :
 # 🚀 Extensions
 
 - Ajouter VLAN 30  
-- Mettre un DHCP par VLAN  
+- Mettre un DHCP par VLAN
+
+  Vérification :
+
+ * * <img width="1461" height="825" alt="image" src="https://github.com/user-attachments/assets/a6f93a1a-d4a9-4fd9-bb9d-d76fc7273d1d" /> * *
+
   
 ---
 
