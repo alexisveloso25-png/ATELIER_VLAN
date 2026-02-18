@@ -171,10 +171,21 @@ PC1 → PC3
 
 # ❓ Questions de réflexion
 
-1. Pourquoi PC1 ne voit-il pas PC3 sans routeur ? -> Répondez directement sur ce Readme.md 
-2. Quel rôle joue le masque /24 ? -> Répondez directement sur ce Readme.md  
-3. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ? -> Répondez directement sur ce Readme.md  
-4. Pourquoi un trunk est-il nécessaire ? -> Répondez directement sur ce Readme.md
+1. Pourquoi PC1 ne voit-il pas PC3 sans routeur ? ->
+   
+Parce qu'ils sont dans des VLAN différents et des sous-réseaux différents. Un switch seul ne sait pas faire passer des données d'un VLAN à un autre (il les isole totalement). Il faut un routeur pour faire le "pont" entre les deux réseaux IP.
+
+2. Quel rôle joue le masque /24 ? ->
+
+   Il sert à définir la taille du réseau. Le /24 (255.255.255.0) indique que les trois premiers nombres de l'IP (ex: 192.168.10) correspondent au nom du réseau, et le dernier nombre au PC. Cela permet au PC de savoir si une adresse est dans son réseau ou s'il doit passer par la passerelle.
+   
+3. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ? ->
+
+   Ça crée un conflit de routage. Le routeur ne pourra pas configurer deux interfaces avec le même réseau (il affichera une erreur). Même sans routeur, les PC ne se verraient pas car le switch bloquerait la communication entre les deux VLANs.
+   
+4. Pourquoi un trunk est-il nécessaire ? ->
+
+   Parce qu'on a plusieurs VLANs mais un seul câble entre le switch et le routeur. Le Trunk permet de faire passer tous les VLANs sur ce même câble en le (tagging 802.1Q) chaque paquet pour que le routeur sache à quel VLAN il appartient.
 
 ---
 
