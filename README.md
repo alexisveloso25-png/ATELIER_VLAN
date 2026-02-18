@@ -196,13 +196,16 @@ Changer VLAN 10 en :
 ```
 192.168.10.0/25
 ```
+Capture 
 
-* * <img width="522" height="147" alt="image" src="https://github.com/user-attachments/assets/fa1d906b-59d6-4078-888d-3f9978bb4754" /> * * 
+* * <img width="522" height="147" alt="image" src="https://github.com/user-attachments/assets/fa1d906b-59d6-4078-888d-3f9978bb4754" /> * *
+ 
 
 Questions :
-- Combien d’hôtes max ?  
-- Quelle plage IP valide ?  
+- Combien d’hôtes max ?   Il y a 128 adresses au total (2*7) dont ce qui donne 126 hôtes utilisables.
+- Quelle plage IP valide ?  La plage va de 192.168.10.1 à 192.168.10.126.
 - Peut-on encore communiquer avec VLAN 20 ?
+  Oui, tant que le routeur est configuré avec la nouvelle passerelle en /25. Le changement de masque dans un VLAN n'empêche pas le routage vers un autre VLAN, car c'est le routeur qui fait le lien entre les deux.
 
 ---
 
