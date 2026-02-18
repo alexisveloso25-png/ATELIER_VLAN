@@ -197,6 +197,8 @@ Changer VLAN 10 en :
 192.168.10.0/25
 ```
 
+* * <img width="522" height="147" alt="image" src="https://github.com/user-attachments/assets/fa1d906b-59d6-4078-888d-3f9978bb4754" /> * * 
+
 Questions :
 - Combien d’hôtes max ?  
 - Quelle plage IP valide ?  
