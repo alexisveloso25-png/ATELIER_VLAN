@@ -173,7 +173,7 @@ PC1 → PC3
 
 1. Pourquoi PC1 ne voit-il pas PC3 sans routeur ? ->
    
-Parce qu'ils sont dans des VLAN différents et des sous-réseaux différents. Un switch seul ne sait pas faire passer des données d'un VLAN à un autre (il les isole totalement). Il faut un routeur pour faire le "pont" entre les deux réseaux IP.
+   Parce qu'ils sont dans des VLAN différents et des sous-réseaux différents. Un switch seul ne sait pas faire passer des données d'un VLAN à un autre (il les isole totalement). Il faut un routeur pour faire le "pont" entre les deux réseaux IP.
 
 2. Quel rôle joue le masque /24 ? ->
 
